@@ -12,7 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:weightSum="0.8"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.phong.music.MainLayoutActivity">
+    tools:context="com.example.calm.appmusic_nhom21_ver1.MainActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"

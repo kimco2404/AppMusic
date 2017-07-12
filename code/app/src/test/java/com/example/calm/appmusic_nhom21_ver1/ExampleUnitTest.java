@@ -1,4 +1,4 @@
-package com.example.phong.music;
+package com.example.calm.appmusic_nhom21_ver1;
 
 import org.junit.Test;
 
