@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.calm.appmusic_nhom21_ver1.MainActivity">
+    tools:context="com.example.phong.music.MainLayoutActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
