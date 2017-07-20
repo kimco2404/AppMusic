@@ -5,11 +5,10 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="25" />
-    <uses-permission android:name="android.permission.INTERNET"/>
 
-
-    <!--<uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
-    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,39 +16,33 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
         <activity
+            android:name="com.example.nhom_2_2.music.SplashScreenActivity"
+            android:theme="@style/AppThemeSplash">
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:fitsSystemWindows="true" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nhom_2_2.music.MainLayoutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name="com.example.nhom_2_2.music.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.nhom_2_2.music.SplashScreenActivity"
+            android:name="com.example.nhom_2_2.music.SearchActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name="com.example.nhom_2_2.music.ListMusic"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name="com.example.nhom_2_2.music.MyListMusic"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.nhom_2_2.music.MainActivityOnline"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
-            </intent-filter>
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

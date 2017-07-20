@@ -1,13 +1,17 @@
 package com.example.nhom_2_2.music;
 /**
- * Created by phong on 12/5/2016.
+ * Created by kimcodev on 3/7/2017.
  */
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Handler;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
 
 public class SplashScreenActivity extends Activity {
 
@@ -30,7 +34,7 @@ public class SplashScreenActivity extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 iv.startAnimation(animation2);
-                Intent intent = new Intent(getApplicationContext(),ListMusic.class);
+                Intent intent = new Intent(getApplicationContext(),MainLayoutActivity.class);
                 startActivity(intent);
                 finish();
             }

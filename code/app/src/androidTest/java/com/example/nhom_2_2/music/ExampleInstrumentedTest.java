@@ -1,4 +1,4 @@
-package com.example.phong.music;
+package com.example.nhom_2_2.music;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.phong.music", appContext.getPackageName());
+        assertEquals("com.example.nhom_2_2.music", appContext.getPackageName());
     }
 }
